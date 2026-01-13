@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐</title>
+    <style>
+        /* 基本样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* 背景图片 */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('file:///C:/Users/zhouz/Pictures/Happy.jpg'); /* 替换为你的图片链接 */
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px); /* 背景模糊效果 */
+        }
+
+        /* 主要内容区域 */
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+			background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, purple);
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block; 
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+			color: #000000;
+        }
+
+        .button {
+            background-color: #F08080; /* 粉色按钮 */
+            color: white;
+            padding: 100px 20px;
+            font-size: 10em;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+			margin-top: 50px;
+        }
+
+        .button:hover {
+            background-color: #FFC0CB;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+
+            .button {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 背景图片 -->
+    <div class="background"></div>
+
+    <!-- 主要内容 -->
+    <div class="content">
+        <h1>生日快乐！</h1><h1>🎉</h1>
+        <p>祝你今天过得特别开心，愿你的每一天都充满笑容和快乐！</p>
+	    <p>生日快乐！愿新的一岁，阳光常伴，笑容常在，所有努力都有回报，
+		所有期待都能实现。愿你心中有梦想，脚下有力量，生活温柔以待，日子闪闪发光。
+		愿健康与你同行，快乐与你相随，烦恼远离，幸运常来。祝你在未来的每一天里，
+		平安喜乐，万事顺意，收获满满的幸福与惊喜！🎉🎂</p>
+	     <div style="color:black;">Happy Birthday · 美好如期而至 ✨</div>
+        <a href="supris.html" target="_self">
+    <button class="button">查看生日礼物</button>
+</a>
+    </div>
+</body>
+</html>
